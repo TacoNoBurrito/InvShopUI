@@ -1,0 +1,6 @@
+name: InvShopUI
+author: Taco
+main: Taco\ISU\Main
+api: "3.0.0"
+version: 1.0.0
+depend: ["EconomyAPI"]

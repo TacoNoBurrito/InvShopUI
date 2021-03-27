@@ -1,0 +1,6 @@
+#InvShopUI Configuration File
+
+categories: #Where the shop categories will be listed
+  food: #The name of the category
+    contents: #The contents of the category
+      "1:0": 10 #The item id in the format (id:meta) and then the price.
