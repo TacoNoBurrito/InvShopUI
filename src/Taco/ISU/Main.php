@@ -87,8 +87,8 @@ class Main extends PluginBase {
 		$inventory->setItem(20, Item::get(160, 14)->setCustomName("§cRemove 1 From Stack"));
 		$inventory->setItem(22, $item);
 		$menu->send($player);
-		$menu->setListener(function(InvMenuTransaction $transaction) use($player, $menu, $inventory, $item, $price) : InvMenuTransactionResult {
-			$size = 64;
+		$size = 64;
+		$menu->setListener(function(InvMenuTransaction $transaction) use($player, $menu, $inventory, $item, $price, $size) : InvMenuTransactionResult {
 			$clicked = $transaction->getItemClicked();
 			switch($clicked->getCustomName()) {
 				case "§cSet Stack Size To One":
